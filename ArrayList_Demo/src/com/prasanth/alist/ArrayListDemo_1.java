@@ -3,15 +3,17 @@ package com.prasanth.alist;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 
 public class ArrayListDemo_1 {
 
 	public static void main(String[] args) {
 
-		ArrayList<String> al = new ArrayList<String>();
+		List<String> al = new ArrayList<String>();
 		al.add("sam");
 		al.add("ram");
 		al.add("pom");
+		al.add("sam");
 
 		Iterator it = al.iterator(); // iterator is used to print elements on
 										// after the other
@@ -24,6 +26,7 @@ public class ArrayListDemo_1 {
 		}
 		System.out.println("Elements after adding");
 		al.add(2, "jam");
+		//al.add(3,null);
 
 		Iterator it1 = al.iterator();
 
